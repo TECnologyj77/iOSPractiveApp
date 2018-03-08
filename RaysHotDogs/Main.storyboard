@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8411">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HotDogDetailViewController" sceneMemberID="viewController" title="HotDogDetailViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1575"/>
+                        <viewControllerLayoutGuide type="bottom" id="1576"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedRGB" red="0.996078431372549" green="0.7803921568627451" blue="0.396078431372549" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1577" translatesAutoresizingMaskIntoConstraints="NO" text="Name" misplaced="YES">
+                                <rect key="frame" x="49" y="237" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1587" firstAttribute="width" constant="161"/>
+                                </constraints>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="1593" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="51" y="301" width="281" height="167"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="1597" firstAttribute="width" constant="281"/>
+                                    <constraint id="1598" firstAttribute="height" constant="167"/>
+                                    <constraint id="5764" firstItem="1593" firstAttribute="height" constant="167"/>
+                                </constraints>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.996078431372549" green="0.7803921568627451" blue="0.396078431372549" alpha="1"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1599" translatesAutoresizingMaskIntoConstraints="NO" text="Price" misplaced="YES">
+                                <rect key="frame" x="44" y="500" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4784" firstAttribute="width" constant="42"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1600" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="42" y="553" width="62" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <constraints>
+                                    <constraint id="4473" firstAttribute="width" constant="62"/>
+                                </constraints>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="1601" translatesAutoresizingMaskIntoConstraints="NO" text="1" textAlignment="right" misplaced="YES">
+                                <rect key="frame" x="204" y="553" width="42" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="1603" firstItem="1601" firstAttribute="height" constant="30"/>
+                                    <constraint id="1606" firstAttribute="width" constant="42"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1602" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="274" y="553" width="78" height="30"/>
+                                <state key="normal" title="Add to cart"/>
+                                <constraints>
+                                    <constraint id="4476" firstAttribute="width" constant="78"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4787" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="51" y="266" width="267" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4797" firstAttribute="width" constant="267"/>
+                                </constraints>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6417" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="64" y="40" width="240" height="128"/>
+                                <constraints>
+                                    <constraint id="6421" firstAttribute="width" constant="240"/>
+                                    <constraint id="6422" firstAttribute="height" constant="128"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1585" firstItem="1577" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="42"/>
+                            <constraint id="1586" firstItem="1577" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="274"/>
+                            <constraint id="1595" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1593" secondAttribute="trailing" constant="47"/>
+                            <constraint id="1596" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1593" secondAttribute="bottom" constant="160"/>
+                            <constraint id="1604" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1601" secondAttribute="trailing" constant="122"/>
+                            <constraint id="1605" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1601" secondAttribute="bottom" constant="45"/>
+                            <constraint id="4471" firstItem="1600" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="49"/>
+                            <constraint id="4472" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1600" secondAttribute="bottom" constant="45"/>
+                            <constraint id="4474" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1602" secondAttribute="trailing" constant="16"/>
+                            <constraint id="4475" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1602" secondAttribute="bottom" constant="45"/>
+                            <constraint id="4782" firstItem="1599" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51"/>
+                            <constraint id="4783" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1599" secondAttribute="bottom" constant="107"/>
+                            <constraint id="4795" firstItem="4787" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51"/>
+                            <constraint id="4796" firstItem="4787" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="303"/>
+                            <constraint id="6419" firstItem="6417" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64"/>
+                            <constraint id="6420" firstItem="6417" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NameLabel" destination="1577" id="name-outlet-1577"/>
+                        <outlet property="DescriptionTB" destination="1593" id="name-outlet-1593"/>
+                        <outlet property="PriceLabel" destination="1599" id="name-outlet-1599"/>
+                        <outlet property="CancelBtn" destination="1600" id="name-outlet-1600"/>
+                        <outlet property="AddToCartBtn" destination="1602" id="name-outlet-1602"/>
+                        <outlet property="amountTxt" destination="1601" id="name-outlet-1601"/>
+                        <outlet property="HotDogDetailView" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
+                        <outlet property="DescLabel" destination="4787" id="name-outlet-4787"/>
+                        <outlet property="HotDogImageView" destination="6417" id="name-outlet-6417"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="7312">
+            <objects>
+                <tableViewController id="7313" sceneMemberID="viewController" customClass="HotDogTableViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7314">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7317" reuseIdentifier="HotDogCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7317" id="7318">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue id="8749" destination="BYZ-38-t0r" kind="show" identifier="HotDogDetailSegue"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7313" id="7315"/>
+                            <outlet property="delegate" destination="7313" id="7316"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7319" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-512" y="-44"/>
+        </scene>
+        <scene sceneID="8388">
+            <objects>
+                <viewController id="8389" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8386"/>
+                        <viewControllerLayoutGuide type="bottom" id="8387"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8390">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.996078431372549" green="0.7803921568627451" blue="0.396078431372549" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8394" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="118" y="102" width="140" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create your order"/>
+                                <connections>
+                                    <segue id="8609" destination="7313" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections/>
+                    <navigationItem title="Welcome To Ray's Hot Dogs" id="8532" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8391" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="-46"/>
+        </scene>
+        <scene sceneID="8410">
+            <objects>
+                <navigationController id="8411" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8413">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="8533" destination="8389" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8414" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1596" y="-43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/hotdog1.jpg" width="300" height="200"/>
+        <image name="Images/hotdog2.jpg" width="300" height="200"/>
+        <image name="Images/hotdog3.jpg" width="300" height="200"/>
+        <image name="Images/hotdog4.jpg" width="300" height="200"/>
+        <image name="Images/hotdog5.jpg" width="300" height="200"/>
+        <image name="Images/hotdog6.jpg" width="300" height="200"/>
+    </resources>
+</document>
