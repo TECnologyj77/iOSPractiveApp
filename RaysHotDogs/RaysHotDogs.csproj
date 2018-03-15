@@ -18,7 +18,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: tcoffin53@yahoo.com (Y88GC399CC)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
@@ -29,6 +29,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <DeviceSpecificBuild>false</DeviceSpecificBuild>
     <MtouchVerbosity></MtouchVerbosity>
+    <CodesignProvision>iOS Team Provisioning Profile: com.companyname.rayshotdog</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -86,11 +87,53 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.0.6188\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.0.6188\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Rox.Xamarin.Camera.Ios">
+      <HintPath>..\packages\Rox.Xamarin.Camera.1.1.0\lib\Xamarin.iOS10\Rox.Xamarin.Camera.Ios.dll</HintPath>
+    </Reference>
+    <Reference Include="Rox.Xamarin.Camera.Portable">
+      <HintPath>..\packages\Rox.Xamarin.Camera.1.1.0\lib\Xamarin.iOS10\Rox.Xamarin.Camera.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoAPI">
+      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.2.0\lib\xamarinios10\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoAPI.Bootstrapper.NetTopologySuite">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.2.0\lib\xamarinios10\GeoAPI.Bootstrapper.NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.2.0\lib\xamarinios10\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.2.0\lib\xamarinios10\PowerCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite">
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.2.6\lib\xamarinios10\ThinkGeo.MapSuite.dll</HintPath>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Wms">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Wms.10.2.2\lib\xamarinios10\ThinkGeo.MapSuite.Layers.Wms.dll</HintPath>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.WorldMapKit">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.WorldMapKit.10.2.1\lib\xamarinios10\ThinkGeo.MapSuite.Layers.WorldMapKit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -101,10 +144,12 @@
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Images\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -119,6 +164,22 @@
       <DependentUpon>HotDogTableViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Cells\HotDogListCell.cs" />
+    <Compile Include="FavoriteTableViewController.cs" />
+    <Compile Include="FavoriteTableViewController.designer.cs">
+      <DependentUpon>FavoriteTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeatLoversTableViewController.cs" />
+    <Compile Include="MeatLoversTableViewController.designer.cs">
+      <DependentUpon>MeatLoversTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeggieLoversTableViewController.cs" />
+    <Compile Include="VeggieLoversTableViewController.designer.cs">
+      <DependentUpon>VeggieLoversTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapViewController.cs" />
+    <Compile Include="MapViewController.designer.cs">
+      <DependentUpon>MapViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RaysHotDogs.Core\RaysHotDogs.Core.csproj">
@@ -133,6 +194,10 @@
     <BundleResource Include="Images\hotdog4.jpg" />
     <BundleResource Include="Images\hotdog5.jpg" />
     <BundleResource Include="Images\hotdog6.jpg" />
+    <BundleResource Include="Images\veggieloversicon.png" />
+    <BundleResource Include="Images\meatloversicon.png" />
+    <BundleResource Include="Images\splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.1.0.6188\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.0.6188\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
 </Project>

@@ -15,6 +15,8 @@ namespace RaysHotDogs
 
 		public override void ViewDidLoad()
 		{
+            base.ViewDidLoad();
+
             var hotDogs = dataService.GetAllHotDogs();
             var datasource = new HotDogDataSource(hotDogs, this);
 

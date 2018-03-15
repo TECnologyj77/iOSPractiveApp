@@ -21,6 +21,8 @@ namespace RaysHotDogs
 		{
             base.ViewDidLoad();
 
+            this.ParentViewController.NavigationItem.Title = SelectedHotDog.Name;
+            this.Title = SelectedHotDog.Name;
             DataBindUI();
 
             AddToCartBtn.TouchUpInside += (object sender, EventArgs e) =>

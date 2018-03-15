@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,23 +17,29 @@
                         <viewControllerLayoutGuide type="bottom" id="696"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ray's Hot Dogs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="224" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="126" y="229" width="163" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="963" translatesAutoresizingMaskIntoConstraints="NO" image="Images/splash.png">
+                                <rect key="frame" x="62" y="193" width="250" height="284"/>
+                                <constraints>
+                                    <constraint id="1569" firstAttribute="width" constant="250"/>
+                                    <constraint id="1570" firstAttribute="height" constant="284"/>
+                                </constraints>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="1"/>
+                            </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint id="1567" firstItem="Ze5-6b-2t3" firstAttribute="trailing" secondItem="963" secondAttribute="trailing" constant="63"/>
+                            <constraint id="1568" firstItem="963" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="193"/>
+                            <constraint id="1775" firstItem="963" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="46"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="292" y="77"/>
         </scene>
     </scenes>
     <resources>
@@ -40,5 +49,8 @@
         <image name="Images/hotdog4.jpg" width="300" height="200"/>
         <image name="Images/hotdog5.jpg" width="300" height="200"/>
         <image name="Images/hotdog6.jpg" width="300" height="200"/>
+        <image name="Images/veggieloversicon.png" width="30" height="30"/>
+        <image name="Images/meatloversicon.png" width="30" height="30"/>
+        <image name="Images/splash.png" width="808" height="663"/>
     </resources>
 </document>
